@@ -11,6 +11,7 @@ configurations can be in other [file formats](#file-formats).
 
 ```sh
 $ npm install https://github.com/thisissoon/node-simple-config
+$ npm install toml
 $ vi config.toml
 ```
 
@@ -100,7 +101,15 @@ myConfig.get('http.root'); // /api
 ```js
 const myConfig = Config.fromFile('config.json');
 ```
+
 ### TOML
+
+The toml parser is not included in the dependencies as its optional,
+you'll need to install it if you're using toml.
+
+```
+$ npm install toml
+```
 ```js
 const myConfig = Config.fromFile('config.toml', 'toml');
 ```
