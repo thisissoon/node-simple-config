@@ -1,0 +1,29 @@
+{
+  "name": "simple-config",
+  "version": "0.1.0",
+  "description": "Simple configuration file loader with environment variable overrides.",
+  "main": "./lib/config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text-summary mocha lib/*.spec.js"
+  },
+  "author": "SOON_ <dorks@thisissoon.com> (http://thisissoon.com)",
+  "contributors": [
+    "James Warren <mail@jamesjwarren.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "deepmerge": "^2.0.1",
+    "object-path": "^0.11.4"
+  },
+  "peerDependencies": {
+    "toml": "^2.3.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1",
+    "nyc": "^11.4.1",
+    "toml": "^2.3.3"
+  }
+}
