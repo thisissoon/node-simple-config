@@ -1,5 +1,7 @@
 # Simple Config
 
+[![Build Status](https://travis-ci.org/thisissoon/node-simple-config.svg?branch=master)](https://travis-ci.org/thisissoon/node-simple-config)
+
 Simple file based configuration with environment variable overrides.
 
 ## Quick Start
